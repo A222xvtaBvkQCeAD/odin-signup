@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="left">
+        <div class="logo">
+          <img src="./img/10235e05fa62951ab6e319f1d5970d95.png" alt="">
+          Aleph-Null
+        </div>
+      </div>
+      <div class="right">
+        <div class="sign-up-text-large left-padding">
+          <p>Lorem ipsum dolor sit amet! Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Duis aute irure <em>dolor</em> in reprehenderit.</p>
+          <p class="sign-up-text-large-lower">Excepteur <em>sint</em> occaecat.</p>
+        </div>
+        <form action="">
+          <div class="sign-up-form left-padding">
+            <p class="sign-up-form-text">Registration</p>
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input">
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+            </div>
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input type="password" name="confirm-password" id="confirm-password" required>
+            </div>
+            <div id="message">
+              <p>Your password must contain the following:</p>
+              <ul>
+                <li id="lowercase" class="invalid pw-req">A <b>lowercase</b> letter</li>
+                <li id="capital" class="invalid pw-req">A <b>capital (uppercase)</b> letter</li>
+                <li id="number" class="invalid pw-req">A <b>number</b></li>
+                <li id="length" class="invalid pw-req">Minimum <b>8 characters</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sign-up-form-button left-padding">
+            <button>Register</button>
+          </div>
+          <div class="log-in left-padding">
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
